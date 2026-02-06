@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Sreeman</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sreeman Reddy</title>
 
 <style>
 :root {
-  --bg: rgb(255,255,255);
-  --text: #1f1f1f;
-  --muted: #9e9e9e;
-  --nums: #c7c7c7;
-  --max-width: 920px;
+  --bg: #ffffff;
+  --text: #2a2a2a;
+  --muted: #b3b3b3;
+  --nums: #d6d6d6;
 }
 
 * {
@@ -26,49 +25,58 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-.page {
-  display: flex;
-  justify-content: center;
-}
-
 main {
-  width: 100%;
-  max-width: var(--max-width);
-  padding: clamp(48px,8vw,96px) clamp(24px,6vw,64px);
+  max-width: 760px;
+  padding: 80px 32px;
 }
 
-section {
-  margin-bottom: clamp(36px,6vw,52px);
-}
-
-.row {
-  display: grid;
-  grid-template-columns: 40px 1fr auto;
-  column-gap: 20px;
+.line {
+  display: flex;
   align-items: baseline;
-  margin: 6px 0;
+  gap: 24px;
+  margin: 10px 0;
 }
 
-.num {
+.ln {
+  width: 32px;
   text-align: right;
   font-size: 13px;
   color: var(--nums);
+  flex-shrink: 0;
 }
 
-.text {
-  font-size: 16px;
-  line-height: 1.65;
-  max-width: 68ch;
+.name {
+  font-size: 20px;
+  font-weight: 400;
 }
 
-.muted {
+.location {
   color: var(--muted);
 }
 
-.year {
+.about,
+.content,
+.role,
+.company,
+a {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.section-title {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--muted);
+}
+
+.years {
+  margin-left: auto;
   font-size: 13px;
   color: var(--muted);
-  white-space: nowrap;
+}
+
+.gap {
+  margin: 22px 0;
 }
 
 a {
@@ -82,39 +90,27 @@ a:hover {
 
 @media (max-width: 600px) {
   main {
-    padding: 48px 24px;
+    padding: 56px 24px;
   }
 
-  section {
-    margin-bottom: 44px;
+  .line {
+    gap: 16px;
   }
 
-  .row {
-    display: block;
-    margin: 18px 0;
-  }
-
-  .num {
-    display: block;
-    font-size: 12px;
-    color: #d6d6d6;
-    margin-bottom: 6px;
-  }
-
-  .text,
-  a.text {
-    display: block;
+  .about,
+  .content,
+  .role,
+  .company,
+  a {
     font-size: 15px;
     line-height: 1.75;
-    color: #2a2a2a;
-    max-width: 34ch;
   }
 
-  .muted {
-    color: #b3b3b3;
+  .name {
+    font-size: 19px;
   }
 
-  .year {
+  .years {
     display: none;
   }
 }
@@ -122,105 +118,87 @@ a:hover {
 </head>
 
 <body>
-<div class="page">
 <main>
 
-<section>
-  <div class="row">
-    <span class="num">01</span>
-    <span class="text">Sreeman Reddy</span>
+  <div class="line">
+    <span class="ln">01</span>
+    <span class="name">Sreeman Reddy</span>
   </div>
-  <div class="row">
-    <span class="num">02</span>
-    <span class="text muted">India</span>
-  </div>
-</section>
 
-<section>
-  <div class="row">
-    <span class="num">03</span>
-    <span class="text">B.Tech student (3rd year), focused on artificial intelligence</span>
+  <div class="line">
+    <span class="ln">02</span>
+    <span class="location">India</span>
   </div>
-  <div class="row">
-    <span class="num">04</span>
-    <span class="text">and the study of decision-making in complex systems.</span>
-  </div>
-</section>
 
-<section>
-  <div class="row">
-    <span class="num">05</span>
-    <span class="text muted">Areas of Interest</span>
-  </div>
-  <div class="row">
-    <span class="num">06</span>
-    <span class="text">Applied machine learning and data-driven reasoning</span>
-  </div>
-  <div class="row">
-    <span class="num">07</span>
-    <span class="text">System design for high-stakes environments</span>
-  </div>
-  <div class="row">
-    <span class="num">08</span>
-    <span class="text">Empirical learning through implementation and analysis</span>
-  </div>
-</section>
+  <div class="line gap"><span class="ln"></span></div>
 
-<section>
-  <div class="row">
-    <span class="num">09</span>
-    <span class="text muted">Current Work</span>
+  <div class="line">
+    <span class="ln">03</span>
+    <p class="about">B.Tech student (3rd year), focused on artificial intelligence</p>
   </div>
-  <div class="row">
-    <span class="num">10</span>
-    <span class="text">Independent development and academic study</span>
-    <span class="year">2023 — Present</span>
-  </div>
-  <div class="row">
-    <span class="num">11</span>
-    <span class="text">AI models, data pipelines, and evaluation workflows</span>
-  </div>
-</section>
 
-<section>
-  <div class="row">
-    <span class="num">12</span>
-    <span class="text muted">Perspective</span>
+  <div class="line">
+    <span class="ln">04</span>
+    <p class="about">and the study of decision-making in complex systems.</p>
   </div>
-  <div class="row">
-    <span class="num">13</span>
-    <span class="text">Technology reflects institutional intent</span>
-  </div>
-  <div class="row">
-    <span class="num">14</span>
-    <span class="text">Intelligence requires structure and constraint</span>
-  </div>
-  <div class="row">
-    <span class="num">15</span>
-    <span class="text">Engineering carries responsibility beyond optimization</span>
-  </div>
-</section>
 
-<section>
-  <div class="row">
-    <span class="num">16</span>
-    <span class="text muted">Links</span>
+  <div class="line gap"><span class="ln"></span></div>
+
+  <div class="line">
+    <span class="ln">05</span>
+    <h2 class="section-title">Areas of Interest</h2>
   </div>
-  <div class="row">
-    <span class="num">17</span>
-    <a class="text" href="mailto:sreeman@sreeman.io">Email</a>
+
+  <div class="line">
+    <span class="ln">06</span>
+    <span class="content">Applied machine learning and data-driven reasoning</span>
   </div>
-  <div class="row">
-    <span class="num">18</span>
-    <a class="text" href="https://x.com/sreemanrp">Twitter</a>
+
+  <div class="line">
+    <span class="ln">07</span>
+    <span class="content">System design for high-stakes environments</span>
   </div>
-  <div class="row">
-    <span class="num">19</span>
-    <a class="text" href="https://linkedin.com/in/sreemanrp">LinkedIn</a>
+
+  <div class="line">
+    <span class="ln">08</span>
+    <span class="content">Empirical learning through implementation and analysis</span>
   </div>
-</section>
+
+  <div class="line gap"><span class="ln"></span></div>
+
+  <div class="line">
+    <span class="ln">09</span>
+    <h2 class="section-title">Current Work</h2>
+  </div>
+
+  <div class="line">
+    <span class="ln">10</span>
+    <span class="company">Independent development and academic study</span>
+    <span class="years">2023–Present</span>
+  </div>
+
+  <div class="line">
+    <span class="ln">11</span>
+    <span class="role">AI models, data pipelines, and evaluation workflows</span>
+  </div>
+
+  <div class="line gap"><span class="ln"></span></div>
+
+  <div class="line">
+    <span class="ln">12</span>
+    <a href="mailto:hi@sreeman.io">Email</a>
+  </div>
+
+  <div class="line">
+    <span class="ln">13</span>
+    <a href="https://x.com/sreemanrp" target="_blank">Twitter</a>
+  </div>
+
+  <div class="line">
+    <span class="ln">14</span>
+    <a href="https://linkedin.com/in/sreemanrp" target="_blank">LinkedIn</a>
+  </div>
 
 </main>
-</div>
 </body>
 </html>
