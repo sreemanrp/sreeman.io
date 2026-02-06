@@ -34,11 +34,11 @@ body {
 main {
   width: 100%;
   max-width: var(--max-width);
-  padding: clamp(48px,8vw,96px) clamp(20px,6vw,64px);
+  padding: clamp(48px,8vw,96px) clamp(24px,6vw,64px);
 }
 
 section {
-  margin-bottom: clamp(32px,6vw,48px);
+  margin-bottom: clamp(36px,6vw,52px);
 }
 
 .row {
@@ -56,7 +56,7 @@ section {
 }
 
 .text {
-  font-size: clamp(15px,1.6vw,16px);
+  font-size: 16px;
   line-height: 1.65;
   max-width: 68ch;
 }
@@ -81,25 +81,37 @@ a:hover {
 }
 
 @media (max-width: 600px) {
+  main {
+    padding: 48px 24px;
+  }
+
+  section {
+    margin-bottom: 44px;
+  }
+
   .row {
     display: block;
-    margin: 14px 0;
+    margin: 18px 0;
   }
 
   .num {
     display: block;
-    width: auto;
-    text-align: left;
     font-size: 12px;
-    margin-bottom: 4px;
+    color: #d6d6d6;
+    margin-bottom: 6px;
   }
 
   .text,
   a.text {
     display: block;
     font-size: 15px;
-    line-height: 1.7;
-    max-width: 100%;
+    line-height: 1.75;
+    color: #2a2a2a;
+    max-width: 34ch;
+  }
+
+  .muted {
+    color: #b3b3b3;
   }
 
   .year {
