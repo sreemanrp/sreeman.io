@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sreeman</title>
+
+<style>
+  :root {
+    --bg: rgb(255, 255, 255);
+    --text: #1f1f1f;
+    --muted: #9e9e9e;
+    --nums: #c7c7c7;
+    --max-width: 920px;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* PAGE WRAPPER */
+  .page {
+    display: flex;
+    justify-content: center;
+  }
+
+  main {
+    width: 100%;
+    max-width: var(--max-width);
+    padding:
+      clamp(48px, 8vw, 96px)
+      clamp(20px, 6vw, 64px);
+    padding-left: max(env(safe-area-inset-left), clamp(20px, 6vw, 64px));
+    padding-right: max(env(safe-area-inset-right), clamp(20px, 6vw, 64px));
+  }
+
+  section {
+    margin-bottom: clamp(28px, 5vw, 48px);
+  }
+
+  /* ROW STRUCTURE */
+  .row {
+    display: grid;
+    grid-template-columns: 40px 1fr auto;
+    column-gap: 20px;
+    align-items: baseline;
+    margin: 6px 0;
+  }
+
+  .num {
+    text-align: right;
+    font-size: 13px;
+    color: var(--nums);
+    user-select: none;
+  }
+
+  .text {
+    font-size: clamp(15px, 1.6vw, 16px);
+    line-height: 1.65;
+    max-width: 68ch; /* keeps text readable on large screens */
+  }
+
+  .muted {
+    color: var(--muted);
+  }
+
+  .year {
+    font-size: 13px;
+    color: var(--muted);
+    white-space: nowrap;
+  }
+
+  a {
+    color: var(--text);
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  /* TABLET */
+  @media (max-width: 900px) {
+    .row {
+      grid-template-columns: 32px 1fr auto;
+      column-gap: 16px;
+    }
+  }
+
+  /* MOBILE */
+  @media (max-width: 600px) {
+    .row {
+      grid-template-columns: 28px 1fr;
+    }
+
+    .year {
+      display: none;
+    }
+
+    .text {
+      max-width: 100%;
+    }
+  }
+
+  /* VERY SMALL DEVICES */
+  @media (max-width: 360px) {
+    .num {
+      font-size: 12px;
+    }
+
+    .text {
+      font-size: 14px;
+    }
+  }
+
+  /* ACCESSIBILITY */
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation: none !important;
+      transition: none !important;
+    }
+  }
+</style>
+</head>
+
+<body>
+<div class="page">
+<main>
+
+  <section>
+    <div class="row">
+      <span class="num">01</span>
+      <span class="text">Sreeman Reddy</span>
+    </div>
+    <div class="row">
+      <span class="num">02</span>
+      <span class="text muted">India</span>
+    </div>
+  </section>
+
+  <section>
+    <div class="row">
+      <span class="num">03</span>
+      <span class="text">
+        B.Tech student (3rd year), focused on artificial intelligence
+      </span>
+    </div>
+    <div class="row">
+      <span class="num">04</span>
+      <span class="text">
+        and the study of decision-making in complex systems.
+      </span>
+    </div>
+  </section>
+
+  <section>
+    <div class="row">
+      <span class="num">05</span>
+      <span class="text muted">Areas of Interest</span>
+    </div>
+    <div class="row">
+      <span class="num">06</span>
+      <span class="text">
+        Applied machine learning and data-driven reasoning
+      </span>
+    </div>
+    <div class="row">
+      <span class="num">07</span>
+      <span class="text">
+        System design for high-stakes environments
+      </span>
+    </div>
+    <div class="row">
+      <span class="num">08</span>
+      <span class="text">
+        Empirical learning through implementation and analysis
+      </span>
+    </div>
+  </section>
+
+  <section>
+    <div class="row">
+      <span class="num">09</span>
+      <span class="text muted">Current Work</span>
+    </div>
+    <div class="row">
+      <span class="num">10</span>
+      <span class="text">
+        Independent development and academic study
+      </span>
+      <span class="year">2023 — Present</span>
+    </div>
+    <div class="row">
+      <span class="num">11</span>
+      <span class="text">
+        AI models, data pipelines, and evaluation workflows
+      </span>
+    </div>
+  </section>
+
+  <section>
+    <div class="row">
+      <span class="num">12</span>
+      <span class="text muted">Perspective</span>
+    </div>
+    <div class="row">
+      <span class="num">13</span>
+      <span class="text">
+        Technology reflects institutional intent
+      </span>
+    </div>
+    <div class="row">
+      <span class="num">14</span>
+      <span class="text">
+        Intelligence requires structure and constraint
+      </span>
+    </div>
+    <div class="row">
+      <span class="num">15</span>
+      <span class="text">
+        Engineering carries responsibility beyond optimization
+      </span>
+    </div>
+  </section>
+
+  <section>
+    <div class="row">
+      <span class="num">16</span>
+      <span class="text muted">Links</span>
+    </div>
+    <div class="row">
+      <span class="num">17</span>
+      <a class="text" href="mailto:hi@sreeman.io">Email</a>
+    </div>
+    <div class="row">
+      <span class="num">18</span>
+      <a class="text" href="https://x.com/sreemanrp">Twitter</a>
+    </div>
+    <div class="row">
+      <span class="num">19</span>
+      <a class="text" href="https://linkedin.com/in/sreemanrp">LinkedIn</a>
+    </div>
+  </section>
+
+</main>
+</div>
+</body>
+</html>
