@@ -3,129 +3,142 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="author" content="sreeman">
-  <link rel="author" href="https://sreeman.io">
-  <meta name="keywords" content="AI,Tech,Typescript,Javascript,React,Tailwind CSS">
-  <meta name="description" content="AI Engineer">
   <title>Sreeman Reddy</title>
 
-  <link rel="icon" href="<link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/sreemanrp/sreeman.io/main/Assets/Images/favicon.ico">">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <meta name="author" content="Sreeman" />
+  <meta name="description" content="AI Engineer" />
+  <meta name="keywords" content="AI, Tech, TypeScript, JavaScript, React, Tailwind CSS" />
 
-  <link rel="stylesheet" href="style.css" />
+  <link rel="author" href="https://sreeman.io" />
+  <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/sreemanrp/sreeman.io/main/Assets/Images/favicon.ico" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "JetBrains Mono", monospace;
+      background: #ffffff;
+      color: #111111;
+    }
+
+    main {
+      padding: 24px;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .top-links {
+      margin-bottom: 48px;
+      font-weight: 300;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    section {
+      margin-bottom: 56px;
+    }
+
+    h2 {
+      font-size: 16px;
+      font-weight: 300;
+      margin: 0 0 12px;
+    }
+
+    p {
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    .muted {
+      margin-top: 8px;
+      color: #666666;
+      font-size: 14px;
+    }
+
+    .newsletter {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .newsletter input {
+      flex: 1;
+      min-width: 180px;
+      height: 32px;
+      padding: 0 10px;
+      border: 1px solid #e5e7eb;
+      font-family: inherit;
+      font-size: 14px;
+    }
+
+    .newsletter button {
+      height: 32px;
+      padding: 0 14px;
+      border: 1px solid #9ca3af;
+      background: #e5e5e5;
+      font-family: inherit;
+      font-size: 14px;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    .sponsors {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 28px 32px;
+      margin-top: 24px;
+    }
+
+    .sponsor {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .sponsor img {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      flex-shrink: 0;
+    }
+
+    @media (max-width: 480px) {
+      main {
+        padding: 20px;
+      }
+
+      section {
+        margin-bottom: 48px;
+      }
+
+      h2 {
+        font-size: 15px;
+      }
+    }
+  </style>
 </head>
 
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: "JetBrains Mono", monospace;
-  background: #fff;
-  color: #111;
-}
-
-.wrap {
-  padding: 24px;
-  max-width: 520px;
-}
-
-.top-links {
-  margin-bottom: 48px;
-  font-weight: 300;
-}
-
-a {
-  color: inherit;
-  text-decoration: underline;
-  text-underline-offset: 4px;
-}
-
-section {
-  margin-bottom: 56px;
-}
-
-h2 {
-  font-size: 16px;
-  font-weight: 300;
-  margin: 0 0 12px 0;
-}
-
-p {
-  margin: 0;
-  line-height: 1.6;
-}
-
-.muted {
-  margin-top: 8px;
-  color: #666;
-  font-size: 14px;
-}
-
-.newsletter {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.newsletter input {
-  width: 210px;
-  height: 26px;
-  padding: 0 8px;
-  border: 1px solid #e5e7eb;
-  font-family: inherit;
-  font-size: 14px;
-  font-weight: 400;
-}
-
-.newsletter input::placeholder {
-  color: #9ca3af;
-}
-
-.newsletter button {
-  height: 26px;
-  padding: 0 12px;
-  border: 1px solid #9ca3af;
-  background: #e5e5e5;
-  font-family: inherit;
-  font-size: 14px;
-  font-weight: 400;
-  cursor: pointer;
-}
-
-.sponsors {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  row-gap: 28px;
-  column-gap: 32px;
-  margin-top: 24px;
-}
-
-.sponsor {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.sponsor img {
-  width: 36px;
-  height: 36px;
-  border-radius: 10px;
-}
-</style>
-
 <body>
-  <main class="wrap">
-
-    <div class="top-links">
-      <a href="#">sreeman</a> / 
-      <a href="https://x.com/sreemanrp">twitter</a> / 
-      <a href="https://github.com/sreemanrp">github</a>
-    </div>
+  <main>
+    <nav class="top-links">
+      <a href="#">sreeman</a>
+      <a href="https://x.com/sreemanrp" target="_blank" rel="noopener">twitter</a>
+      <a href="https://github.com/sreemanrp" target="_blank" rel="noopener">github</a>
+    </nav>
 
     <section>
       <h2>sreeman/newsletter</h2>
@@ -134,12 +147,7 @@ p {
         action="https://app.loops.so/api/newsletter-form/3b769e71a4ebfbea5d935db810664fe1"
         method="post"
       >
-        <input
-          type="email"
-          name="email"
-          placeholder="m@example.com"
-          required
-        />
+        <input type="email" name="email" placeholder="m@example.com" required />
         <button type="submit">Sign up</button>
       </form>
       <p class="muted">1K+ subscribers</p>
@@ -147,32 +155,33 @@ p {
 
     <section>
       <h2>sreeman/ai</h2>
-      <p><a href="https://github.com/sreemanrp/ai">
-        If you're looking for sreeman/ai,<br>you can find it here</a>.
+      <p>
+        <a href="https://github.com/sreemanrp/ai" target="_blank" rel="noopener">
+          If you're looking for sreeman/ai,<br />
+          you can find it here
+        </a>.
       </p>
     </section>
 
     <section>
       <h2>Top Sponsors</h2>
-
       <div class="sponsors">
         <div class="sponsor">
-          <img src="https://github.com/l0kireddy.png">
-          <a href="https://github.com/l0kireddy">Lokesh Reddy</a>
+          <img src="https://github.com/l0kireddy.png" alt="Lokesh Reddy" />
+          <a href="https://github.com/l0kireddy" target="_blank" rel="noopener">Lokesh Reddy</a>
         </div>
 
         <div class="sponsor">
-          <img src="https://github.com/YogiSriGanesh2004.png">
-          <a href="https://github.com/YogiSriGanesh2004">Yogi</a>
+          <img src="https://github.com/YogiSriGanesh2004.png" alt="Yogi" />
+          <a href="https://github.com/YogiSriGanesh2004" target="_blank" rel="noopener">Yogi</a>
         </div>
 
         <div class="sponsor">
-          <img src="https://github.com/SesaankPotharlanka.png">
-          <a href="https://github.com/SesaankPotharlanka">Sesaank</a>
+          <img src="https://github.com/SesaankPotharlanka.png" alt="Sesaank" />
+          <a href="https://github.com/SesaankPotharlanka" target="_blank" rel="noopener">Sesaank</a>
         </div>
       </div>
     </section>
-
   </main>
 </body>
 </html>
