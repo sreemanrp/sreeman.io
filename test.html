@@ -29,16 +29,14 @@
     }
 
     main {
-      padding: 24px;
-      max-width: 720px;
-      margin: 0 auto;
+      padding: 32px 24px;
+      max-width: 520px;
     }
 
     .top-links {
       margin-bottom: 48px;
       font-weight: 300;
       display: flex;
-      flex-wrap: wrap;
       gap: 12px;
     }
 
@@ -71,34 +69,32 @@
 
     .newsletter {
       display: flex;
-      flex-wrap: wrap;
       gap: 8px;
+      flex-wrap: wrap;
     }
 
     .newsletter input {
-      flex: 1;
-      min-width: 180px;
-      height: 32px;
-      padding: 0 10px;
+      width: 210px;
+      height: 28px;
+      padding: 0 8px;
       border: 1px solid #e5e7eb;
       font-family: inherit;
       font-size: 14px;
     }
 
     .newsletter button {
-      height: 32px;
-      padding: 0 14px;
+      height: 28px;
+      padding: 0 12px;
       border: 1px solid #9ca3af;
       background: #e5e5e5;
       font-family: inherit;
       font-size: 14px;
       cursor: pointer;
-      white-space: nowrap;
     }
 
     .sponsors {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(2, 1fr);
       gap: 28px 32px;
       margin-top: 24px;
     }
@@ -116,17 +112,13 @@
       flex-shrink: 0;
     }
 
-    @media (max-width: 480px) {
+    @media (max-width: 640px) {
       main {
-        padding: 20px;
+        max-width: 100%;
       }
 
-      section {
-        margin-bottom: 48px;
-      }
-
-      h2 {
-        font-size: 15px;
+      .sponsors {
+        grid-template-columns: 1fr;
       }
     }
   </style>
