@@ -1,217 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sreeman</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="sreeman">
+  <link rel="author" href="https://sreeman.io">
+  <meta name="keywords" content="AI,Tech,Typescript,Javascript,React,Tailwind CSS">
+  <meta name="description" content="AI Engineer">
+  <title>Sreeman Reddy</title>
+
+  <link rel="icon" href="<link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/sreemanrp/sreeman.io/main/Assets/Images/favicon.ico">">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
 
 <style>
-/* Palantir Alliance Font */
-@font-face {
-  font-family: "AllianceNo2";
-  src: url("https://www.palantir.com/fonts/Alliance/AllianceNo2-Regular.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-:root {
-  --bg: #ffffff;
-  --text: #2a2a2a;
-  --muted: #b3b3b3;
-  --nums: #d6d6d6;
-}
-
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  background: var(--bg);
-  color: var(--text);
-  font-family: "AllianceNo2", ui-serif, Georgia, "Times New Roman", serif;
-  -webkit-font-smoothing: antialiased;
+  font-family: "JetBrains Mono", monospace;
+  background: #fff;
+  color: #111;
 }
 
-main {
-  max-width: 760px;
-  padding: 80px 32px;
+.wrap {
+  padding: 24px;
+  max-width: 520px;
 }
 
-.line {
-  display: flex;
-  align-items: baseline;
-  gap: 24px;
-  margin: 10px 0;
-}
-
-.ln {
-  width: 32px;
-  text-align: right;
-  font-size: 13px;
-  color: var(--nums);
-  font-family: "AllianceNo2", ui-serif, Georgia, serif;
-}
-
-.name {
-  font-size: 22px;
-  font-weight: normal;
-  font-family: "AllianceNo2", ui-serif, Georgia, serif;
-}
-
-.location {
-  color: var(--muted);
-}
-
-.about,
-.content,
-.role,
-.company,
-a {
-  font-size: 17px;
-  line-height: 1.7;
-  font-family: "AllianceNo2", ui-serif, Georgia, serif;
-}
-
-.section-title {
-  font-size: 17px;
-  font-weight: normal;
-  color: var(--muted);
-  font-family: "AllianceNo2", ui-serif, Georgia, serif;
-}
-
-.years {
-  margin-left: auto;
-  font-size: 13px;
-  color: var(--muted);
-  font-family: "AllianceNo2", ui-serif, Georgia, serif;
-}
-
-.gap {
-  margin: 22px 0;
+.top-links {
+  margin-bottom: 48px;
+  font-weight: 300;
 }
 
 a {
-  color: var(--text);
-  text-decoration: none;
-}
-
-a:hover {
+  color: inherit;
   text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
-@media (max-width: 600px) {
-  main {
-    padding: 56px 24px;
-  }
+section {
+  margin-bottom: 56px;
+}
 
-  .line {
-    gap: 16px;
-  }
+h2 {
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0 0 12px 0;
+}
 
-  .about,
-  .content,
-  .role,
-  .company,
-  a {
-    font-size: 16px;
-    line-height: 1.75;
-  }
+p {
+  margin: 0;
+  line-height: 1.6;
+}
 
-  .name {
-    font-size: 20px;
-  }
+.muted {
+  margin-top: 8px;
+  color: #666;
+  font-size: 14px;
+}
 
-  .years {
-    display: none;
-  }
+.newsletter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.newsletter input {
+  width: 210px;
+  height: 26px;
+  padding: 0 8px;
+  border: 1px solid #e5e7eb;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.newsletter input::placeholder {
+  color: #9ca3af;
+}
+
+.newsletter button {
+  height: 26px;
+  padding: 0 12px;
+  border: 1px solid #9ca3af;
+  background: #e5e5e5;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.sponsors {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 28px;
+  column-gap: 32px;
+  margin-top: 24px;
+}
+
+.sponsor {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sponsor img {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
 }
 </style>
-</head>
 
 <body>
-<main>
+  <main class="wrap">
 
-  <div class="line">
-    <span class="ln">01</span>
-    <span class="name">Sreeman Reddy</span>
-  </div>
+    <div class="top-links">
+      <a href="#">sreeman</a> / 
+      <a href="https://x.com/sreemanrp">twitter</a> / 
+      <a href="https://github.com/sreemanrp">github</a>
+    </div>
 
-  <div class="line">
-    <span class="ln">02</span>
-    <span class="location">India</span>
-  </div>
+    <section>
+      <h2>sreeman/newsletter</h2>
+      <form
+        class="newsletter"
+        action="https://app.loops.so/api/newsletter-form/3b769e71a4ebfbea5d935db810664fe1"
+        method="post"
+      >
+        <input
+          type="email"
+          name="email"
+          placeholder="m@example.com"
+          required
+        />
+        <button type="submit">Sign up</button>
+      </form>
+      <p class="muted">1K+ subscribers</p>
+    </section>
 
-  <div class="line gap"><span class="ln"></span></div>
+    <section>
+      <h2>sreeman/ai</h2>
+      <p><a href="https://github.com/sreemanrp/ai">
+        If you're looking for sreeman/ai,<br>you can find it here</a>.
+      </p>
+    </section>
 
-  <div class="line">
-    <span class="ln">03</span>
-    <p class="about">B.Tech student (3rd year), focused on artificial intelligence</p>
-  </div>
+    <section>
+      <h2>Top Sponsors</h2>
 
-  <div class="line">
-    <span class="ln">04</span>
-    <p class="about">and the study of decision-making in complex systems.</p>
-  </div>
+      <div class="sponsors">
+        <div class="sponsor">
+          <img src="https://github.com/l0kireddy.png">
+          <a href="https://github.com/l0kireddy">Lokesh Reddy</a>
+        </div>
 
-  <div class="line gap"><span class="ln"></span></div>
+        <div class="sponsor">
+          <img src="https://github.com/YogiSriGanesh2004.png">
+          <a href="https://github.com/YogiSriGanesh2004">Yogi</a>
+        </div>
 
-  <div class="line">
-    <span class="ln">05</span>
-    <h2 class="section-title">Areas of Interest</h2>
-  </div>
+        <div class="sponsor">
+          <img src="https://github.com/SesaankPotharlanka.png">
+          <a href="https://github.com/SesaankPotharlanka">Sesaank</a>
+        </div>
+      </div>
+    </section>
 
-  <div class="line">
-    <span class="ln">06</span>
-    <span class="content">Applied machine learning and data-driven reasoning</span>
-  </div>
-
-  <div class="line">
-    <span class="ln">07</span>
-    <span class="content">System design for high-stakes environments</span>
-  </div>
-
-  <div class="line">
-    <span class="ln">08</span>
-    <span class="content">Empirical learning through implementation and analysis</span>
-  </div>
-
-  <div class="line gap"><span class="ln"></span></div>
-
-  <div class="line">
-    <span class="ln">09</span>
-    <h2 class="section-title">Current Work</h2>
-  </div>
-
-  <div class="line">
-    <span class="ln">10</span>
-    <span class="company">Independent development and academic study</span>
-    <span class="years">2023–Present</span>
-  </div>
-
-  <div class="line">
-    <span class="ln">11</span>
-    <span class="role">AI models, data pipelines, and evaluation workflows</span>
-  </div>
-
-  <div class="line gap"><span class="ln"></span></div>
-
-  <div class="line">
-    <span class="ln">12</span>
-    <a href="mailto:sreeman@sreeman.io">Email</a>
-  </div>
-
-  <div class="line">
-    <span class="ln">13</span>
-    <a href="https://x.com/sreemanrp" target="_blank">Twitter</a>
-  </div>
-
-  <div class="line">
-    <span class="ln">14</span>
-    <a href="https://linkedin.com/in/sreemanrp" target="_blank">LinkedIn</a>
-  </div>
-
-</main>
+  </main>
 </body>
 </html>
